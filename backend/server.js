@@ -45,6 +45,6 @@ app.get("/api/protected", protect, (req, res) => {
 });
 
 // Start server
-app.listen(PORT, () => {
+app.listen(PORT, "0.0.0.0", () => {
   console.log(`NOVA server running on port ${PORT}`);
 });
